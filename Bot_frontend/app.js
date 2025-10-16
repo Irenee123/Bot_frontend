@@ -117,7 +117,7 @@ function submitMessage(raw){
   }
 
   // unknown -> suggest scheduling
-  appendMessage("I don't have a direct answer to that. Would you like to schedule a meeting with a menstrual coach for deeper clarification? Type 'schedule' or click the link below.");
+  appendMessage("I don't have a direct answer to that. Would you like to schedule a meeting with a menstrual coach for deeper clarification? Click the link below.");
   const link = document.createElement("div");
   link.className = "msg bot";
   const mail = "mailto:menstrualcoach@example.com?subject=Schedule%20Meeting&body=Hi%2C%0A%0AI'd%20like%20to%20schedule%20a%20meeting%20to%20discuss%20my%20question.%0A%0AQuestion%3A%20" + encodeURIComponent(text);
@@ -141,4 +141,5 @@ input.addEventListener("keydown", (e)=>{
 // initial bot greeting
 appendMessage("Hello — I'm the Menstrual Health Bot. Ask me one of the suggested questions or type your own. For help scheduling a coach, ask 'schedule' or type your question.");
 renderSuggestions();
+
 // ...existing code...
