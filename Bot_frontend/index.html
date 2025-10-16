@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menstrual Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Menstrual Health Bot</h1>
+      <p class="sub">Ask a question or pick a suggested one — the bot will answer.</p>
+    </header>
+
+    <section class="chat-area" id="chatArea" aria-live="polite"></section>
+
+    <form id="inputForm" class="input-row" autocomplete="off">
+      <input id="userInput" class="input" placeholder="Type your question or greeting..." />
+      <button id="sendBtn" class="btn" type="submit">Send</button>
+    </form>
+
+
+
+    <footer class="footer">
+      <small>If bot can't answer, it will suggest scheduling a meeting with a menstrual coach.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
